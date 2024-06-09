@@ -11,5 +11,5 @@ This is a chrome extension that allows youto highlight important text on any web
 3. Notes contains the URL Link, the Highlights and the Notes for a particular URL, all aligned in a systematic list.
 4. User can clear the stored highlights for any URL with one simple command, Ctrl +Shift+V.
 5. You can Highlight with any Custom colour of your choice.
-6. Syncs across all devices - if you highlight text from a laptop, then look at the same web page from your phone, your highlights will be there (if you are logged in to Chrome on both). 
+6. Syncs across all devices - you can highlight text from a laptop,and then look at the same web page from your phone, your highlights will be there.
 
