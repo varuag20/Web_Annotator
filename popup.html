@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Web Annotator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="tab">
+      
+      <button class="tablinks">
+        Notes
+      </button>
+      <button class="tablinks">
+        Highlight Color
+      </button>
+    </div>
+
+    
+    <div id="notes" class="tabcontent" style="display:none">
+      <div class="loader"></div>
+      <div class="searchDiv">
+        <div id="expand">
+          <i class="fa fa-expand"></i>
+        </div>
+        <div id="compress">
+          <i class="fa fa-compress"></i>
+        </div>
+        
+        <span class="searchBar"></span>
+      </div>
+      <h4 class="url-header wrap"></h4>
+      <div class="notesDiv"></div>
+      <div class="spacer"></div>
+    </div>
+
+    
+    <div id="color" class="tabcontent" style="display:none">
+      <form>
+        <h3>Select a custom highlight color for this URL:</h3>
+        <input type="color" class="colorPicker" />
+        <input type="submit" value="Reset to #FFFF00" class="reset" />
+        <div class="success-msg-reset" style="display: none; margin-top: 12px;">
+          Color reset! Refresh to see changes.
+        </div>
+        <br /><br />
+        <input
+          class="thisWebsite"
+          type="submit"
+          value="Change For This Website Only"
+        />
+      </form>
+      <div class="success-msg" style="display: none; margin-top: 12px;">
+        Done! Refresh to see changes.
+      </div>
+      <hr style="margin: 30px auto" />
+      <div class="example-text-div">
+        
+      </div>
+    </div>
+    <footer class="footer">
+      <p class="footer-header">
+        Instructions <i class="fa fa-chevron-up instructions-up"></i
+        ><i class="fa fa-chevron-down instructions-down"></i>
+      </p>
+      <div class="instructions">
+        <ol>
+          <h4>How to Highlight?</h4>
+          <li>Drag your cursor over text to select it</li>
+          <li>
+            (PC) Press
+            <span style="text-decoration: underline">Ctrl + Shift+ H</span> on keyboard
+            
+          </li>
+          <li>
+            (Mac) Press
+            <span style="text-decoration: underline">⌘ + Shift+ H</span> on keyboard
+          </li>
+          <h4>How to View Or Add Notes?</h4>
+          <li>Double click highlighted text</li>
+          <h4>How to Clear Highlights for Current URL?</h4>
+          <li>
+            (PC) Press
+            <span style="text-decoration: underline">Ctrl + Shift + V</span> on
+            keyboard
+          </li>
+          <li>
+            (Mac) Press
+            <span style="text-decoration: underline">⌘ + Shift + V</span> on
+            keyboard
+            
+          </li>
+        </ol>
+        
+      </div>
+    </footer>
+    <script src="popup.js" type="text/javascript"></script>
+  </body>
+</html>
+
+
